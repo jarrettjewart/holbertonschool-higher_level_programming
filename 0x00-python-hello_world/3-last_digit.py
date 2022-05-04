@@ -8,7 +8,7 @@ else:
     if (last_digit == 0):
         print("Last digit of {} is {} and is 0".format(number, last_digit))
     elif last_digit > 5:
-        print("Last dogot of {} is {}".format(number, last_digit), end=" ")
+        print("Last digit of {} is {}".format(number, last_digit), end=" ")
         print("and is greater than 5")
     else:
         print("Last digit of {} is {}".format(number, last_digit), end=" ")
