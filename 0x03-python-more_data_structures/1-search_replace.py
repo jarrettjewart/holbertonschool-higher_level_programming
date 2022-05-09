@@ -1,3 +1,3 @@
 #!/usr/bin/python3
 def search_replace(my_list, search, replace):
-    return 
+    return [i if i != search else replce for i in my_list] 
