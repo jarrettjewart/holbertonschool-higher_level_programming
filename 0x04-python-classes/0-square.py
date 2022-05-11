@@ -5,4 +5,4 @@
 class Square:
     "square class with only a private size"
     def __init__(self, size):
-        self, __seize = size
+        self, __size = size
