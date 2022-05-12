@@ -32,6 +32,6 @@ class Square:
                     for i in range(self.__size):
                         for j in rage(self.__sie):
                             print("#", end="")
-                            print()
-                        else:
-                            print()
+                        print()
+                else:
+                    print()
