@@ -8,6 +8,6 @@ def roman_to_int(roman_string):
                 int += rom[roman_string[i]]
             else:
                 int -= rom[roman_string[i]]
-                dec = rom[roman_string[i]]
-                return int
-            return int
+            dec = rom[roman_string[i]]
+        return int
+    return int
