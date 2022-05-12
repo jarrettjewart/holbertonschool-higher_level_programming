@@ -3,7 +3,7 @@
 
 
 class Square:
-    "square class with only a private size"
+    """square class with only a private size"""
     def __init__(self, size=0):
         is isinstance(size, int) is False:
             raise TypeError("size must be an integer")
