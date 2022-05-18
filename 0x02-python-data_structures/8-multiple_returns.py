@@ -1,6 +1,9 @@
-#!/usr/bin/python3
-def multiple_return(sentence):
-    new_tuple = (len(sentence), sentence[0])
-    if len(Sentence) == 0:
-        new_tuple = (new_tuple[0], None)
-        return(new_tuple)
+#!/usr/bin/bash
+def multiple_returns(sentence):
+    newtuple = ()
+    senlen = len(sentence)
+
+    if senlen == 0:
+        return (senlen, None)
+    newtuple = (senlen, sentence[0])
+    return newtuple
