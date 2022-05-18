@@ -1,9 +1,14 @@
 #!/usr/bin/python3
-if __name__ == "__main__":
-    from calculator_1 import add, sub, mul, div
-    a = 10
-    b = 5
-    print("{:d} + {:d} = {:d}".format(a, b, add(a, b)))
-    print("{:d} - {:d} = {:d}".format(a, b, sub(a, b)))
-    print("{:d} * {:d} = {:d}".format(a, b, mul(a, b)))
-    print("{:d} / {:d} = {:d}".format(a, b, div(a, b)))
+import sys
+elements = len(sys.argv)
+if elements == 1:
+    print("0 arguments.".format(elements))
+elif elements == 2:
+    print("{} argument:".format(elements - 1))
+    print("{}: {}".format(elements - 1, sys.argv[elements - 1]))
+else:
+    print("{} arguments:".format(elements - 1))
+    for i in range(1, elements):
+        print("{}: {}".format(i, sys.argv[i]))
+if __name__ == "__main__"
+    import sys
