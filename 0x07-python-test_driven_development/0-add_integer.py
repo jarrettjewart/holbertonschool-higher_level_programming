@@ -14,7 +14,7 @@ def add_integer(a, b=98):
     return: int: python3 -c 'print(__import__("my_module").__doc__)'
     """
 
-    if isinstance(a, (int, float)) is Flase:
+    if isinstance(a, (int, float)) is False:
         raise TypeError("a must be an integer")
     elif isinstance(b, (int, float)) is False:
         raise TypeError("b must be an integer")
