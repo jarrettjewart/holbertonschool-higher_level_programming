@@ -13,6 +13,7 @@ def matrix_divided(matrix, div):
     matrix: matrix to divide
     div: num divided by
     Return: new matrix
+    python3 -c 'print(__import__("my_module").__doc__)
     """
     err = "matrix must be a matrix (list of lists) of integers/floats"
     for row in matrix:
