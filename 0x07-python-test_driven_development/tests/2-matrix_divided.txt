@@ -4,7 +4,7 @@ The text file to test file 2-matrix_divided.py
 Using ''matrix_divided''
 -------------------
 
-This is a test file to test the 2-matrix_divided.py function matrix_divide
+This is a test file to test the 2-matrix_divided.py function matrix_divided
 First import ``matrix_divided`` from the ``2-matrix_divided`` module:
 
     >>> matrix_divided = __import__('2-matrix_divided').matrix_divided
