@@ -1,23 +1,21 @@
 #!/usr/bin/python3
 """
-add_integer:
-    Returns sum of two ints
-    Returns only ints
+Fuction that adds 2 integers, must be an int or float
+python3 -c 'print(__import__("my_module").__doc__)'
+python3 -c 'print(__import__("my_module").my_function.__doc__)'
 """
 
 
-def add_integer(a b=98):
+def add_integer(a, b=98):
     """
-    Change floats to ints
+    add_integer - takes 2 args, must be int or float
+    a: int 1
+    b: int 2
+    return: int: python3 -c 'print(__import__("my_module").__doc__)'
     """
-    if type(a) is float:
-        a = int(a)
-    if type(b) is float:
-        b = int(b)
-    if type(a) is not int:
+
+    if isinstance(a, (int, float)) is Flase:
         raise TypeError("a must be an integer")
-    if type(b) is not int:
+    elif isinstance(b, (int, float)) is False:
         raise TypeError("b must be an integer")
-    if a is None or b is None:
-        return
-    return a + b
+    return int(a) + int(b)
