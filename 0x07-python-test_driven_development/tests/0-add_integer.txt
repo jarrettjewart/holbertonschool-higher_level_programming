@@ -1,45 +1,55 @@
-Try importing function from module:
-	>>> add_integer = __import__("0-add_integer").add_integer
+The text file to test file 0-add-integer.py
+======================
 
-Try positives:
-	>>> add_integer(2, 2)
-	4
+Using ''add_integer''
+-------------------
 
-Try one negative:
-	>>> add_integer(100, -2)
-	98
+This is a test file to test the   First import
+``add_integer`` from the ``0-add_integer`` module:
 
-	>>> add_integer(2)
-	100
+    >>> add_integer = __import__('0-add_integer').add_integer
 
-Try two overflow floats:	
-	>>> add_integer(98.99999999999999999, .999999999999999999)
-	100
 
-Try two overflow floats:	
-	>>> add_integer(.99999999999999999, .999999999)
-	1
+Now use it:
+    
+Adding Positive Ints: 
+    >>> add_integer(2, 98)
+    100
 
-Try float with negative:
-	>>> add_integer(100.3, -2)
-	98
+Adding Negative Ints:
+    >>> add_integer(-5, 5)
+    0
 
-Try nothing passed:
-	>>> add_integer()
-	Traceback (most recent call last):
-	TypeError: add_integer() missing 1 required positional argument: 'a'
+Passing in Nothing:
+    >>> add_integer()
+    Traceback (most recent call last):
+    ...
+    TypeError: add_integer() missing 1 required positional argument: 'a'
 
-Try passing a string:
-	>>> add_integer("I don't like testing", 3)
-	Traceback (most recent call last):
-	TypeError: a must be an integer
+Pass in a not b:
+    >>> add_integer(2)
+    100
 
-Try not a number:
-	>>> add_integer(float('nan'), 2)
-	Traceback (most recent call last):
-	ValueError: cannot convert float NaN to integer
+Pass String:
+    >>> add_integer("hello")
+    Traceback (most recent call last):
+    ...
+    TypeError: a must be an integer
 
-Try infinity:
-	>>> add_integer(float('inf'), 2)
-	Traceback (most recent call last):
-	OverflowError: cannot convert float infinity to integer
+Pass None:
+    >>> add_integer(4, int('hello'))
+    Traceback (most recent call last):
+    ...
+    ValueError: invalid literal for int() with base 10: 'hello'
+
+Pass nan value:
+    >>> add_integer(4, float('nan'))
+    Traceback (most recent call last):
+    ...
+    ValueError: cannot convert float NaN to integer
+
+Pass Overflow:
+    >>> add_integer(4, float('inf'))
+    Traceback (most recent call last):
+    ...
+    OverflowError: cannot convert float infinity to integer
