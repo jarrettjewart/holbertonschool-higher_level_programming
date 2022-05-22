@@ -7,7 +7,7 @@ python3 -c 'print(__import__("my_module").__doc__)'
 
 def text_indentation(text):
     """
-    text_indentation - function that prints text with 2 lines after special chars
+    text_indentation - function that prints text lines after special chars
     text: text to test
     Retrun: nothing
     python3 -c 'print(__import__("my_module").__doc__)'
