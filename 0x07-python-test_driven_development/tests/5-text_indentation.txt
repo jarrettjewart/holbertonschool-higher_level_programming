@@ -16,12 +16,12 @@ Normal String:
     >>> text_indentation("Hello my name is")
     Hello my name is
 
-    >>> text_indentation("Hello? My Name is: Kaylee ")
+    >>> text_indentation("Hello? My Name is: Jarrett ")
     Hello?
     <BLANKLINE>
     My Name is:
     <BLANKLINE>
-    Kaylee 
+    Jarrett 
 
     >>> text_indentation("Holberton.School")
     Holberton.
@@ -52,8 +52,3 @@ Empty Pass:
     Traceback (most recent call last):
     ...
     TypeError: text_indentation() missing 1 required positional argument: 'text'
-
-Test String:
-    >>> text_identation(12)
-except Exception as e:
-	print(e)
