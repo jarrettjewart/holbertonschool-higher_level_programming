@@ -52,3 +52,8 @@ Empty Pass:
     Traceback (most recent call last):
     ...
     TypeError: text_indentation() missing 1 required positional argument: 'text'
+
+Test String:
+    >>> text_identation(12)
+except Exception as e:
+	print(e)
