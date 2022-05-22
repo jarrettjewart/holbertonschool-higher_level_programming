@@ -1,0 +1,54 @@
+The text file to test file 5-text_indentation.py
+======================
+
+Using ''text_indentation''
+-------------------
+
+This is a test file to test the 5-text_indentation.py function text_indentation
+First import ``text_indentation`` from the ``5-text_indentation`` module:
+
+    >>> text_indentation = __import__('5-text_indentation').text_indentation
+
+
+Now use it:
+
+Normal String:
+    >>> text_indentation("Hello my name is")
+    Hello my name is
+
+    >>> text_indentation("Hello? My Name is: Kaylee ")
+    Hello?
+    <BLANKLINE>
+    My Name is:
+    <BLANKLINE>
+    Kaylee 
+
+    >>> text_indentation("Holberton.School")
+    Holberton.
+    <BLANKLINE>
+    School
+
+Integer Argument:
+    >>> text_indentation(124312)
+    Traceback (most recent call last):
+    ...
+    TypeError: text must be a string
+
+Blank Line:
+    >>> text_indentation("      ")
+    <BLANKLINE>
+
+    >>> text_indentation("")
+
+
+    >>> text_indentation("\n")
+    <BLANKLINE>
+
+    >>> text_indentation(" ")
+    <BLANKLINE>
+
+Empty Pass:
+    >>> text_indentation()
+    Traceback (most recent call last):
+    ...
+    TypeError: text_indentation() missing 1 required positional argument: 'text'
