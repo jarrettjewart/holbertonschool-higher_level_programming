@@ -4,7 +4,7 @@ Class defines rectangle
 """
 
 
-class Reactangle:
+class Rectangle:
     """
     Defines rectangle by height and width
     """
