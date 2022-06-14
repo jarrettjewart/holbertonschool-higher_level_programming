@@ -1,0 +1,3 @@
+-- Q0
+
+SHOW DATABASES

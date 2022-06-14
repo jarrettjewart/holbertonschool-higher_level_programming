@@ -1,0 +1,3 @@
+-- Q6
+
+SELECT * FROM first_table
