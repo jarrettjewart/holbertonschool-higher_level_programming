@@ -1,6 +1,6 @@
 -- Q4
 
 CREATE TABLE if NOT EXISTS first_table (
-	if INT,
+	id INT,
 	name VARCHAR(256)
 	);
